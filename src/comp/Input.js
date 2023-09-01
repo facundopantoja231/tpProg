@@ -11,6 +11,7 @@ export default class Input extends React.Component {
       <label>
         {titulo}
         <input
+          className="input"
           placeholder={titulo}
           value={valor}
           onChange={(e) => onChange(e.target.value)}

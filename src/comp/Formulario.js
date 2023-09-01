@@ -17,7 +17,7 @@ export default class Formulario extends React.Component {
     const { ID, Materia, Docente, HsCatedras, Nota } = this.state;
     return (
       <div className="Formulario">
-        Formulario
+        <h2 className="title">Registro de Materias</h2>
         <Input
           titulo="ID"
           valor={ID}
@@ -45,13 +45,12 @@ export default class Formulario extends React.Component {
             onChange={(valor) => this.setstate({ Nota: valor })}
           />
         </div>
-        <div>
-          <Boton titulo="Guardar" onClick={() => alert("Hola")} />
+        <div className="botones">
+          <Boton titulo="+" onClick={() => alert("Hola")} />
+          <Boton titulo="G" />
+          <Boton titulo="B" />
         </div>
-        <div>
-          <Boton />
-          <Boton />
-        </div>
+        <div></div>
       </div>
     );
   }

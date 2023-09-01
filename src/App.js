@@ -14,7 +14,7 @@ export default class App extends React.Component {
     return (
       <div>
         <Header />
-        <div>
+        <div className="form">
           <Formulario />
           <Listado />
         </div>
